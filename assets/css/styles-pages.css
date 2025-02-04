@@ -1,0 +1,142 @@
+.header-img {
+    height: 150px;
+    width: 75px;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.js-php {
+    display: flex;
+}
+
+.josette {
+    height: 75px;
+    width: 150px;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+/*#html-sec {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        text-align: center;
+    }
+}*/
+
+/*
+.arts-container :nth-child(odd) {
+    display: flex;
+}
+
+.arts-container :nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.art-container {
+    width: 100%;
+
+    h3 {
+        width: 50%;
+        height: 25%;
+
+    }
+}
+
+.text-art  {
+
+    display:flex;
+
+
+    p:hover {
+        color: black;
+    }
+}*/
+.pages-sec h2{
+    text-align: center;
+}
+/* Conteneur principal */
+.arts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 7em;
+}
+
+/* Conteneur de chaque article */
+.art-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+}
+
+.arts-container :nth-child(odd) {
+    display: flex;
+}
+
+.arts-container :nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 7em;
+}
+
+/* Conteneur texte avec image */
+.text-art {
+    position: relative;
+    width: 20em;
+    height: auto;
+    overflow: hidden;
+}
+
+/* Image qui recouvre le texte */
+.text-art img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Le texte est invisible au départ */
+.text-art p {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8); /* Légèrement transparent */
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Au survol, le texte apparaît et l'image disparaît */
+.text-art:hover p {
+    opacity: 1;
+}
+
+.text-art:hover img {
+    opacity: 0;
+}
+.pages-sec h2{
+    border: solid ;
+    border-radius: 50px;
+    margin-bottom: 100px;
+    padding: 15px;
+    background: linear-gradient(to right, rgb(12, 12, 12), rgb(61, 61, 61));
+    color: gray;
+}
+.title-txt{
+    display: flex;
+    flex-direction: column;
+}

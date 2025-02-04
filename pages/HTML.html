@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/styles-pages.css">
+    <link rel="stylesheet" href="../assets/css/responsiv.css">
+    <link rel="shortcut icon" href="../assets/pictures/logo-header.jpg">
+    <title>WebDev pour les nuls</title>
+</head>
+
+<body>
+    <header class="header-pages">
+        <div class="logo-header"><img src="../assets/pictures/logo-header.jpg" alt="logo WebDev pour les nuls"></div>
+        <input type="checkbox" id="burger-toggle" class="burger-checkbox">
+        <label for="burger-toggle" class="burger-menu">
+            <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                <line x1="5" y1="7" x2="25" y2="7" stroke="black" stroke-width="2" stroke-linecap="round" />
+                <line x1="5" y1="15" x2="25" y2="15" stroke="black" stroke-width="2" stroke-linecap="round" />
+                <line x1="5" y1="23" x2="25" y2="23" stroke="black" stroke-width="2" stroke-linecap="round" />
+            </svg>
+        </label>
+
+        <!-- Menu déroulant -->
+        <nav class="dropdown-menu">
+            <ul>
+                <li><a href="../index.html">Acceuil</a></li>
+                <li><a href="./HTML.html">L'Html</a></li>
+                <li><a href="./CSS.html">Le CSS</a></li>
+                <li><a href="./Javascript.html">Le Javascript</a></li>
+            </ul>
+        </nav>
+        <div class="header-img"><img src="../assets/pictures/logo-html.png" alt="logo-html"></div>
+        <nav>
+            <ul class="big">
+                <li><a href="../index.html">Acceuil</a></li>
+                <li><a href="./HTML.html ">L'Html</a></li>
+                <li><a href="./CSS.html">Le CSS</a></li>
+                <li><a href="./Javascript.html">Le Javascript</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="pages-sec">
+            <h2>Html</h2>
+            <div class="arts-container">
+                <article class="art-container">
+                    <div class="title-txt">
+                        <h3>Le HTML, c'est quoi ?</h3>
+                    </div>
+                    
+                    <div class="text-art">
+                        <img src="../assets/pictures/img-home-1.png" alt="html-illustration">
+                        <p>HTML (HyperText Markup Language) est le langage utilisé pour créer des pages
+                            web. Imagine que c'est
+                            comme le squelette d'un site : il structure les informations en indiquant où mettre les
+                            titres,
+                            les
+                            images, les paragraphes et les liens. Sans HTML, une page web serait juste un écran vide !
+                        </p>
+                    </div>
+                </article>
+                <article class="art-container">
+                    <div class="title-txt">
+                        <h3>Des briques pour construire une page</h3>
+                        <p></p>
+                    </div>
+                    
+                    <div class="text-art">
+                        <img src="../assets/pictures/html_art_2.png" alt="html-illustration">
+                        <p>Chaque élément HTML est comme une brique dans un mur. Par exemple, < h1> sert à
+                                écrire un grand
+                                titre, < p> pour un paragraphe, et < img> pour afficher une image. Ces éléments sont
+                                        entourés de
+                                        balises (<>), un peu comme des étiquettes qui indiquent leur rôle.
+                        </p>
+                    </div>
+                </article>
+                <article class="art-container">
+                    <div class="title-txt">
+                        <h3>Un site bien organisé</h3>
+                        <p>bloublou</p>
+                    </div>
+                    <div class="text-art">
+                        <img src="../assets/pictures/html_art_3.webp" alt="html-illustration">
+                        <p >
+                            Pour bien structurer une page, on utilise des balises comme < header> pour
+                                l'en-tête, < nav> pour le menu, < section> pour les parties importantes, et < footer> pour
+                                            le bas de page. C'est
+                                            comme organiser une maison : chaque pièce a sa fonction, et HTML permet de tout
+                                            ranger
+                                            au
+                                            bon endroit.
+                        </p>
+                    </div>
+                    
+                </article>
+                <article class="art-container">
+                    <div class="title-txt">
+                        <h3>Un langage facile à apprendre</h3>
+                        <p></p>
+                    </div>
+                    <div class="text-art">
+                        <img src="../assets/pictures/html-art 4.webp" alt="html-illustration">
+                        <p>HTML est simple et accessible : il suffit d'un éditeur de texte et d'un
+                            navigateur pour voir le
+                            résultat. C'est un excellent point de départ pour créer son propre site web, et avec un peu de
+                            CSS
+                            et de JavaScript, on peut le rendre beau et interactif ! 🚀
+                        </p>
+                    </div>
+                   
+                   
+                </article>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-l">
+            <p>©2025 Florian Faucher</p>
+        </div>
+        <div class="footer-r">
+            <label for="form-toggle" class="open-form-button">Nous contacter</label>
+            <!-- Checkbox pour contrôler l'état -->
+            <input type="checkbox" id="form-toggle" class="form-checkbox">
+
+            <!-- Modale avec le formulaire -->
+            <div class="form-modal">
+                <div class="form-content">
+                    <h2>Inscription</h2>
+                    <form action="#" method="POST">
+                        <label for="name">Nom :</label>
+                        <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
+
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+
+                        <label for="message">Message :</label>
+                        <textarea id="message" name="message" placeholder="Écrivez votre message ici..." rows="5"
+                            required></textarea>
+
+                        <button type="submit">Envoyer</button>
+                    </form>
+                    <!-- Bouton pour fermer la modale -->
+                    <label for="form-toggle" class="close-form">Fermer</label>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

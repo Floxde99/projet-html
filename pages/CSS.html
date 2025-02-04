@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/styles-pages.css">
+    <link rel="stylesheet" href="../assets/css/responsiv.css">
+    <link rel="shortcut icon" href="../assets/pictures/logo-header.jpg">
+    <title>WebDev pour les nuls</title>
+</head>
+
+<body>
+    <header class="header-pages">
+        <div class="logo-header"><img src="../assets/pictures/logo-header.jpg" alt="logo WebDev pour les nuls"></div>
+        <input type="checkbox" id="burger-toggle" class="burger-checkbox">
+        <label for="burger-toggle" class="burger-menu">
+            <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                <line x1="5" y1="7" x2="25" y2="7" stroke="black" stroke-width="2" stroke-linecap="round" />
+                <line x1="5" y1="15" x2="25" y2="15" stroke="black" stroke-width="2" stroke-linecap="round" />
+                <line x1="5" y1="23" x2="25" y2="23" stroke="black" stroke-width="2" stroke-linecap="round" />
+            </svg>
+        </label>
+
+        <!-- Menu déroulant -->
+        <nav class="dropdown-menu">
+            <ul>
+                <li><a href="../index.html">Acceuil</a></li>
+                <li><a href="./HTML.html">L'Html</a></li>
+                <li><a href="./CSS.html">Le CSS</a></li>
+                <li><a href="./Javascript.html">Le Javascript</a></li>
+            </ul>
+        </nav>
+        <div class="header-img"><img src="../assets/pictures/logo-css.png" alt="logo-css"></div>
+        <nav>
+            <ul class="big">
+                <li><a href="../index.html">Acceuil</a></li>
+                <li><a href="./HTML.html ">L'Html</a></li>
+                <li><a href="./CSS.html">Le CSS</a></li>
+                <li><a href="./Javascript.html">Le Javascript</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+
+        <section class="pages-sec">
+            <h2>CSS</h2>
+            <div class="arts-container">
+                <article class="art-container">
+                    <h3>Le CSS, c'est quoi ?</h3>
+                    <div class="text-art">
+                        <img src="../assets/pictures/CSS.webp" alt="html-illustration">
+                        <p>CSS (Cascading Style Sheets) est le langage qui permet de styliser une page web. Si HTML est le
+                            squelette d'un site, alors CSS est la garde-robe qui lui donne son apparence : couleurs, tailles,
+                            polices et mise en page. Grâce au CSS, une page devient belle et agréable à regarder.</p>
+                    </div>
+                </article>
+                <article class="art-container">
+                    <h3>Des règles pour tout personnaliser</h3>
+                    <div class="text-art">
+                        <img src="../assets/pictures/img-flex.webp" alt="html-illustration">
+                        <p> Avec le CSS, on peut dire qu'un titre doit être rouge (color: red;), qu'un texte doit être centré
+                            (text-align: center;) ou qu'une image doit avoir une ombre (box-shadow: 5px 5px 10px gray;). Ces
+                            règles sont écrites dans un fichier séparé et appliquées aux éléments HTML pour leur donner du
+                            style.
+                         </p>
+                    </div>
+                </article>
+                <article class="art-container">
+                    <h3>Une mise en page bien organisée</h3>
+                    <div class="text-art">
+                        <img src="../assets/pictures/img-grid.webp" alt="html-illustration">
+                        <p >
+                            Le CSS permet aussi d'agencer les éléments sur la page. On peut les aligner, les espacer et même
+                            créer des grilles et des colonnes avec flexbox et grid. C'est un peu comme organiser les meubles
+                            d'une pièce pour que tout soit harmonieux et pratique.
+                        </p>
+                    </div>
+                    
+                </article>
+                <article class="art-container">
+                    <h3>Un site unique et responsive</h3>
+                    <div class="text-art">
+                        <img src="../assets/pictures/img-querry.webp" alt="html-illustration">
+                        <p>Avec CSS, on peut adapter un site à tous les écrans (ordinateur, tablette, mobile) en utilisant des
+                            media queries. Ainsi, un site peut être beau et lisible partout ! C'est l'outil idéal pour
+                            personnaliser son site et le rendre moderne et attrayant. 🎨
+                         </p>
+                    </div>
+                   
+                   
+                </article>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-l">
+            <p>©2025 Florian Faucher</p>
+        </div>
+        <div class="footer-r">
+            <label for="form-toggle" class="open-form-button">Nous contacter</label>
+            <!-- Checkbox pour contrôler l'état -->
+            <input type="checkbox" id="form-toggle" class="form-checkbox">
+
+            <!-- Modale avec le formulaire -->
+            <div class="form-modal">
+                <div class="form-content">
+                    <h2>Inscription</h2>
+                    <form action="#" method="POST">
+                        <label for="name">Nom :</label>
+                        <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
+
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+
+                        <label for="message">Message :</label>
+                        <textarea id="message" name="message" placeholder="Écrivez votre message ici..." rows="5"
+                            required></textarea>
+
+                        <button type="submit">Envoyer</button>
+                    </form>
+                    <!-- Bouton pour fermer la modale -->
+                    <label for="form-toggle" class="close-form">Fermer</label>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

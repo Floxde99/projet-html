@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsiv.css">
+    <link rel="shortcut icon" href="./assets/pictures/icon-page.jpg">
+    <title>WebDev pour les nuls</title>
+</head>
+
+<body id="home-page">
+    <header>
+        <div class="logo-header"><img src="./assets/pictures/logo-header.jpg" alt="logo WebDev pour les nuls"></div>
+        <input type="checkbox" id="burger-toggle" class="burger-checkbox">
+        <label for="burger-toggle" class="burger-menu">
+            <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                <line x1="5" y1="7" x2="25" y2="7" stroke="black" stroke-width="2" stroke-linecap="round" />
+                <line x1="5" y1="15" x2="25" y2="15" stroke="black" stroke-width="2" stroke-linecap="round" />
+                <line x1="5" y1="23" x2="25" y2="23" stroke="black" stroke-width="2" stroke-linecap="round" />
+            </svg>
+        </label>
+        <nav class="dropdown-menu">
+            <ul>
+                <li><a href="#">Acceuil</a></li>
+                <li><a href="./pages/HTML.html ">L'Html</a></li>
+                <li><a href="./pages/CSS.html">Le CSS</a></li>
+                <li><a href="./pages/Javascript.html">Le Javascript</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="big">
+                <li><a href="./index.html">Acceuil</a></li>
+                <li><a href="./pages/HTML.html ">L'Html</a></li>
+                <li><a href="./pages/CSS.html">Le CSS</a></li>
+                <li><a href="./pages/Javascript.html">Le Javascript</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="titre">
+            <h1>LE Web-Développement pour les nuls</h1>
+            <div class="title-container">
+                <div class="img-left">
+                    <ul class="img-title">
+                        <li><a href="./pages/HTML.html"><img src="./assets/pictures/logo-html.png" alt="logo-html"></a></li>
+                        <li><a href="./pages/CSS.html"><img src="./assets/pictures/logo-css.png" alt="logo-css"></a></li>
+                    </ul>
+
+                </div>
+                <p>Le site éducatif a pour objectif de simplifier et d'expliquer le métier de développeur web aux
+                    personnes
+                    n'ayant pas de compétences techniques. Composé de quatre pages, il vise à rendre accessible les
+                    bases du
+                    développement web à travers des explications claires et des exemples pratiques. La page d'accueil
+                    présente le site et son objectif, en introduisant le domaine du développement web. Ensuite, une page
+                    détaillera le langage HTML, en expliquant sa structure et son rôle dans la création de sites web.
+                    Une
+                    troisième page sera dédiée à CSS, mettant en avant son rôle dans le style et la mise en forme des
+                    pages
+                    web. Enfin, la dernière page abordera les technologies PHP et JavaScript, expliquant leur fonction
+                    dans
+                    la dynamique d'un site web. L'ensemble du projet sera construit uniquement en HTML et CSS, dans un
+                    souci
+                    de simplicité et de pédagogie.</p>
+                <div class="img-right">
+                    <ul class="img-title">
+                        <li><a href="./pages/Javascript.html"><img src="./assets/pictures/logo-js.png" alt="logo-js"></a></li>
+                        <li><a href="./pages/Javascript.html"><img src="./assets/pictures/logo-php.png" alt="logo-php"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+        <section id="fin-main">
+            <h2>Qu'est-ce qu'un développeur Web ?</h2>
+            <div class="main-container">
+                <p>Le développeur web est la personne qui crée et s'occupe des sites Internet. Son rôle est de
+                    construire tout ce que vous voyez et utilisez sur un site, comme les textes, les images, les
+                    boutons, les menus ou encore les couleurs. Mais il gère aussi ce qu'on ne voit pas : les systèmes
+                    qui permettent de faire fonctionner le site, comme enregistrer les commandes dans une boutique en
+                    ligne ou envoyer les messages d'un formulaire de contact. <br>Pour faire tout cela, il utilise des "langages informatiques", qui sont comme des instructions ou
+                    des recettes qu'un ordinateur peut comprendre. Il y a des langages pour créer l'apparence du site,
+                    comme HTML et CSS, et d'autres pour gérer les parties plus techniques, comme PHP.</p>
+                    <div class="fond">
+                        
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-l">
+            <p>©2025 Florian Faucher</p>
+        </div>
+        <div class="footer-r">
+            <label for="form-toggle" class="open-form-button">Nous contacter</label>
+            <!-- Checkbox pour contrôler l'état -->
+            <input type="checkbox" id="form-toggle" class="form-checkbox">
+
+            <div class="form-modal">
+                <div class="form-content">
+                    <h2>Contact</h2>
+                    <form action="./assets/php/send.php" method="POST">
+                        <label for="name">Nom :</label>
+                        <input type="text" id="name" name="name" placeholder="ex: Jean Dupond" required>
+
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" placeholder="exemple@exemple.fr" required>
+
+                        <label for="message">Message :</label>
+                        <textarea id="message" name="message" placeholder="Écrivez votre message ici..." rows="5"
+                            required></textarea>
+
+                        <button type="submit">Envoyer</button>
+                    </form>
+                    <!-- Bouton pour fermer la modale -->
+                    <label for="form-toggle" class="close-form">Fermer</label>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

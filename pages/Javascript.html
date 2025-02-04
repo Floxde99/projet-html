@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/styles-pages.css">
+    <link rel="stylesheet" href="../assets/css/responsiv.css">
+    <link rel="shortcut icon" href="../assets/pictures/logo-header.jpg">
+    <title>WebDev pour les nuls</title>
+</head>
+
+<body>
+    <header class="header-pages">
+        <div class="logo-header"><img src="../assets/pictures/logo-header.jpg" alt="logo WebDev pour les nuls"></div>
+        <input type="checkbox" id="burger-toggle" class="burger-checkbox">
+        <label for="burger-toggle" class="burger-menu">
+            <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                <line x1="5" y1="7" x2="25" y2="7" stroke="black" stroke-width="2" stroke-linecap="round" />
+                <line x1="5" y1="15" x2="25" y2="15" stroke="black" stroke-width="2" stroke-linecap="round" />
+                <line x1="5" y1="23" x2="25" y2="23" stroke="black" stroke-width="2" stroke-linecap="round" />
+            </svg>
+        </label>
+
+        <!-- Menu déroulant -->
+        <nav class="dropdown-menu">
+            <ul>
+                <li><a href="../index.html">Acceuil</a></li>
+                <li><a href="./HTML.html">L'Html</a></li>
+                <li><a href="./CSS.html">Le CSS</a></li>
+                <li><a href="./Javascript.html">Le Javascript</a></li>
+            </ul>
+        </nav>
+        <div class="header-img js-php">
+            <img src="../assets/pictures/logo-js.png" alt="logo-js">
+        </div>
+        <div class="josette">
+            <img src="../assets/pictures/logo-php.png" alt="logo-php">
+        </div>
+        </div>
+        <nav>
+            <ul class="big">
+                <li><a href="../index.html">Acceuil</a></li>
+                <li><a href="./HTML.html ">L'Html</a></li>
+                <li><a href="./CSS.html">Le CSS</a></li>
+                <li><a href="./Javascript.html">Le Javascript</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section class="pages-sec">
+            <h2>JavaScript/PHP</h2>
+            <div class="arts-container">
+                <article class="art-container">
+                    <h3>JavaScript et PHP, un duo puissant !</h3>
+                    <div class="text-art">
+                        <img src="../assets/pictures/img-php.webp" alt="html-illustration">
+                        <p>JavaScript et PHP sont deux langages complémentaires qui permettent de créer des sites web
+                            interactifs et dynamiques. JavaScript agit côté navigateur (front-end) pour rendre les pages
+                            vivantes, tandis que PHP fonctionne côté serveur (back-end) pour gérer les données et la
+                            logique du site. Ensemble, ils permettent de construire des sites modernes et performants.
+
+                        </p>
+                    </div>
+                </article>
+                <article class="art-container">
+                    <h3>JavaScript pour l'interactivité</h3>
+                    <div class="text-art">
+                        <img src="../assets/pictures/img-js.webp" alt="html-illustration">
+                        <p>Avec JavaScript, on peut créer des animations, modifier le contenu d'une page sans la
+                            recharger (document.querySelector("h1").innerText = "Bienvenue !") et répondre aux actions
+                            des utilisateurs (clics, formulaires, etc.). Il est idéal pour améliorer l'expérience
+                            utilisateur et rendre un site plus réactif.
+                        </p>
+                    </div>
+                </article>
+                <article class="art-container">
+                    <h3>PHP pour le traitement des données</h3>
+                    <div class="text-art">
+                        <img src="../assets/pictures/img-php.webp" alt="html-illustration">
+                        <p>
+                            PHP, lui, s'occupe de tout ce qui concerne le serveur : récupérer les informations des
+                            formulaires, interagir avec une base de données (comme MySQL) et générer du contenu
+                            personnalisé. Par exemple, un site e-commerce utilise PHP pour afficher les produits
+                            disponibles en fonction des achats des utilisateurs.
+                        </p>
+                    </div>
+
+                </article>
+                <article class="art-container">
+                    <h3>Un travail d'équipe efficace</h3>
+                    <div class="text-art">
+                        <img src="../assets/pictures/img-js.webp" alt="html-illustration">
+                        <p>JavaScript et PHP peuvent travailler ensemble pour créer des sites web dynamiques et
+                            interactifs. Par exemple, JavaScript envoie des informations via AJAX sans recharger la
+                            page, et PHP les traite pour mettre à jour une base de données. Ce duo est essentiel pour
+                            des sites modernes comme des réseaux sociaux, des plateformes de streaming ou des boutiques
+                            en ligne ! 🔥
+                        </p>
+                    </div>
+
+
+                </article>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-l">
+            <p>©2025 Florian Faucher</p>
+        </div>
+        <div class="footer-r">
+            <label for="form-toggle" class="open-form-button">Nous contacter</label>
+            <!-- Checkbox pour contrôler l'état -->
+            <input type="checkbox" id="form-toggle" class="form-checkbox">
+
+            <!-- Modale avec le formulaire -->
+            <div class="form-modal">
+                <div class="form-content">
+                    <h2>Inscription</h2>
+                    <form action="#" method="POST">
+                        <label for="name">Nom :</label>
+                        <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
+
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+
+                        <label for="message">Message :</label>
+                        <textarea id="message" name="message" placeholder="Écrivez votre message ici..." rows="5"
+                            required></textarea>
+
+                        <button type="submit">Envoyer</button>
+                    </form>
+                    <!-- Bouton pour fermer la modale -->
+                    <label for="form-toggle" class="close-form">Fermer</label>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
